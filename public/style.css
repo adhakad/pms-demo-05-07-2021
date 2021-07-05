@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: all 0.2s ease-in-out;
+  font-family: "Open Sans", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.video__item {
+  position: relative;
+}
+
+.video__name {
+  z-index: 2;
+  bottom: 20.5px;
+  color: white;
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading {
+  width: 100%;
+  min-height: calc(80vh - 48px);
+}
+.loading_spinner {
+  margin: 8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #e4e5e6;
+  animation: spin 1s linear infinite;
+  border-color: #e4e5e6 transparent;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+  from {
+    transform: rotate(0deg);
+  }
+}

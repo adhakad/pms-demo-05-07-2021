@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      const ROOM_ID = "<%= roomId %>";
+      const ROOMH_ID = "<%= roomH_id %>";
+    </script>
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js" defer></script>
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="roomId.js" defer></script>
+    <title>Video Chat Room</title>
+  </head>
+  <body>
+    <div id="joinVideoGrid" style="width: 100%;height: 80vh;position: absolute;z-index: 1;"></div>
+    <div id="newVideoGrid" style="position: relative;z-index: 2;top:80vh;"></div>
+    <div id="hostVideoGrid" style="width: 100%;height: 75vh;position: fixed;z-index: 3;"></div>
+    <div style="height: 65vh;"></div>
+    <div id="conVideoGrid" style="width: 100%;"></div>
+  </body>
+</html>
